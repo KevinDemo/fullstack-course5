@@ -10,7 +10,10 @@
   <body>
     <h1>Expressions and Interpolation</h1>
     <div ng-controller='MsgController'>
-      Message is: <br>
+    {{name}} has a message for you: {{sayMessage();}} <br>
+    <button type="button" name="button" ng-click="feedKevin();">Feed Kevin</button>
+    <br>
+    <img ng-src="images/yaakov_{{stateOfBeing}}.png" />
 
     </div>
   </body>
